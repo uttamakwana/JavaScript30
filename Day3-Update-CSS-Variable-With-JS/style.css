@@ -1,0 +1,55 @@
+:root {
+  --color: #6495ed;
+  --spacing: 20px;
+  --blur: 2px;
+}
+
+body {
+  background-color: #193549;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container-heading h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-family: Inter;
+}
+.container-heading h1 span {
+  color: var(--color);
+}
+
+.container-variables {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  justify-content: space-around;
+}
+
+.container-variables .container-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container-group label {
+  color: whitesmoke;
+  font-size: 1.25rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-image img {
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  padding: var(--spacing);
+  background-color: var(--color);
+  filter: blur(var(--blur));
+}
