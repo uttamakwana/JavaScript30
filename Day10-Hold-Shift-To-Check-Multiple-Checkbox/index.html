@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hold shirt to check multiple checkbox</title>
+    <script src="script.js" defer></script>
+    <style>
+      body {
+        height: 100vh;
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: whitesmoke;
+        padding: 1rem;
+      }
+
+      .box {
+        display: flex;
+        background-color: white;
+        border: 1px solid black;
+        padding: 0.25rem 1rem;
+      }
+      p.checked {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="box">
+        <input type="checkbox" />
+        <p>this is an item 1</p>
+      </div>
+      <div class="box">
+        <input type="checkbox" />
+        <p>this is an item 2</p>
+      </div>
+      <div class="box">
+        <input type="checkbox" />
+        <p>this is an item 3</p>
+      </div>
+      <div class="box">
+        <input type="checkbox" />
+        <p>this is an item 4</p>
+      </div>
+      <div class="box">
+        <input type="checkbox" />
+        <p>this is an item 5</p>
+      </div>
+      <div class="box">
+        <input type="checkbox" />
+        <p>this is an item 6</p>
+      </div>
+      <div class="box">
+        <input type="checkbox" />
+        <p>this is an item 7</p>
+      </div>
+    </main>
+  </body>
+</html>
