@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: lightskyblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 1rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  width: 50%;
+  max-height: 75%;
+}
+
+.container-content {
+  /* max-height: 600px; */
+  overflow-y: scroll;
+}
+
+.container-content::-webkit-scrollbar {
+  display: none;
+}
+
+.container-header h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: cursive, sans-serif;
+}
+
+.container-controls > * {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  font-family: cursive, sans-serif;
+}
+
+.container-controls {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.container-controls input {
+  width: 60%;
+}
+
+.container-controls button {
+  flex: 40%;
+}
+
+.container-controls > *:focus {
+  outline: 1px solid rgb(0, 118, 139);
+}
+
+.container-controls button:focus {
+  background-color: rgb(0, 118, 139);
+  outline: 1px solid whitesmoke;
+  color: whitesmoke;
+}
+
+h6 {
+  font-style: italic;
+  font-family: sans-serif;
+  text-align: center;
+  color: darkslateblue;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+
+li {
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.delete-todo {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .container-controls {
+    flex-direction: column;
+  }
+
+  .container-controls input {
+    width: 100%;
+  }
+}
+
+.container-content {
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
+}
