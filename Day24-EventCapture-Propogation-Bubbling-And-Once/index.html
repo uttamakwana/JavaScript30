@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event capture, Propogation, Bubbling and Once</title>
+    <script src="script.js" defer></script>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      div {
+        cursor: pointer;
+      }
+      .one {
+        width: 100%;
+        padding: 100px;
+        background-color: thistle;
+      }
+
+      .second {
+        padding: 100px;
+        background-color: lightblue;
+      }
+
+      .third {
+        padding: 100px;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <div class="second">
+        <div class="third"></div>
+      </div>
+    </div>
+
+    <button class="btn">Subscribe!</button>
+  </body>
+</html>
