@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, darkmagenta, darkblue) no-repeat center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  gap: 1rem;
+}
+
+video {
+  display: block;
+}
+
+.rate-container {
+  /* padding: 1rem; */
+  background-color: white;
+  border-radius: 1rem;
+  width: 50px;
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.rate {
+  border-radius: 1rem;
+  min-height: 10%;
+  height: 16.3%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-family: cursive;
+  transition: all linear 0.2s;
+  background: linear-gradient(to right, darkmagenta, darkblue);
+}
