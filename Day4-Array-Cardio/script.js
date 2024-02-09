@@ -211,14 +211,14 @@ const users = [
 //   "Aaditya, Chaturvedi",
 // ];
 
-// const names2 = names.forEach(name => console.log(name));
-// const sortedNameWithLastName = names.sort((previous, next) => {
-//   const [alastName, afirstName] = previous.split(", ");
-//   const [blastName, bfirstName] = next.split(", ");
-//   return afirstName > bfirstName ? 1 : -1;
-// });
+const names2 = names.forEach((name) => console.log(name));
+const sortedNameWithLastName = names.sort((previous, next) => {
+  const [alastName, afirstName] = previous.split(", ");
+  const [blastName, bfirstName] = next.split(", ");
+  return afirstName > bfirstName ? 1 : -1;
+});
 
-// console.table(sortedNameWithLastName);
+console.table(sortedNameWithLastName);
 
 const vehicles = [
   "car",
